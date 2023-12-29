@@ -1,0 +1,43 @@
+
+* {
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items:center;
+    border : 2px solid black;
+    width: 100%;
+    height: auto;
+    
+    
+    
+}
+
+h1 {
+    margin: 14vh;
+    color: pink;
+    font-size: 7vh;
+}
+
+.buttons {
+    margin: 4vh;
+    border-radius: 1vh;
+    width: 12vh;
+    height: 5vh;
+    color: rgb(43, 47, 46);
+    font-size: 2.5vh;
+}
+ul {
+    display: inline;
+    text-align: center;
+    font-size: 2.5vh;
+    margin-right: 38px;
+}
+
+h3 {
+    margin: 9vh;
+}
+

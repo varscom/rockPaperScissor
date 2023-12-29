@@ -1,13 +1,26 @@
 let myScore = 0;
 let compScore = 0;
+let mygrandScore = 0;
+let compgrandScore = 0;
 function checkScore() {   
     if (compScore === 5) {
-        alert("Game over. You lose. Please try again");
+        scoreBoard.textContent = "SkyNet took over the world. Find the nearest bunker and sing a RATM song to highten the spirit !!! Choose a tool to play again.";
+        compgrandScore ++;
+        compScore = 0;
+        myScore = 0;
+        
+        
     } else if (myScore === 5) {
-        alert("Game over. You win. Play again to enjoy more.");
+        scoreBoard.textContent = "They stopped looking for Sarah Conner. Resistance wins. But they'll be back !!! Choose a tool to play again.";
+        mygrandScore ++;
+        compScore = 0;
+        myScore = 0;
+       
+        
     } else {
         scoreBoard.textContent = `You: ${myScore} SkyNet: ${compScore}`;
     }
+    grandscore.textContent = `Beat : ${mygrandScore} - Beaten:${compgrandScore}`;
 }
 
 
@@ -25,6 +38,9 @@ const paper = document.querySelector("#paper");
 const scissor = document.querySelector("#scissor");
 const scoreBoard = document.querySelector("h3");
 const roundTable = document.querySelector("ul");
+const grandscore = document.querySelector("h2");
+
+
 
 rock.addEventListener("click", () => {
     computer = toolChoice[compChoice()];
